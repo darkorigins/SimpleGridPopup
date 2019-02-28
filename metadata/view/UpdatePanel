@@ -1,0 +1,190 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "designer|userAlias": "updatepanel",
+        "designer|userClassName": "UpdatePanel",
+        "floated": true,
+        "modal": true,
+        "title": "Update Record"
+    },
+    "configAlternates": {
+        "centered": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "floated": "boolean",
+        "modal": "boolean",
+        "title": "string"
+    },
+    "name": "MyFormPanel",
+    "designerId": "9cfe3247-1599-479a-bab8-c0835e2ee3ea",
+    "viewControllerInstanceId": "b580fbf2-055c-4242-8fd3-1d237a340fae",
+    "viewModelInstanceId": "3fd1bc08-ac9d-4016-962d-b0a74c48a093",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Firstname",
+                "name": "firstName",
+                "value": [
+                    "{employee.firstName}"
+                ]
+            },
+            "configAlternates": {
+                "value": "binding",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField",
+            "designerId": "547dd941-3f8a-46e6-9a33-c0e905e4bd8d"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Surname",
+                "name": "lastName",
+                "value": [
+                    "{employee.lastName}"
+                ]
+            },
+            "configAlternates": {
+                "value": "binding",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField1",
+            "designerId": "a71314a2-cdfc-41e1-abb5-840ff76f9eee"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Phonenumber",
+                "name": "phonenumber",
+                "value": [
+                    "{employee.phonenumber}"
+                ]
+            },
+            "configAlternates": {
+                "value": "binding",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField2",
+            "designerId": "1985d7e7-7c9d-4b09-87a0-dc432691511a"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "x-fa fa-close",
+                "text": "Cancel"
+            },
+            "configAlternates": {
+                "iconCls": "string",
+                "text": "string"
+            },
+            "name": "MyButton",
+            "designerId": "7166de06-b087-4ece-85ff-b7c63fbf8751",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onCancelButton",
+                        "implHandler": [
+                            "var view = this.getView(),",
+                            "    record = view.getRecord();",
+                            "view.destroy();",
+                            "record.reject();"
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCancelButton",
+                    "designerId": "e28b144f-9a6e-4577-9641-e236a76b45ac"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "x-fa fa-check",
+                "text": "Save"
+            },
+            "configAlternates": {
+                "iconCls": "string",
+                "text": "string"
+            },
+            "name": "MyButton1",
+            "designerId": "4a7254b8-e3b6-4f76-8b39-83392315ae1c",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onSaveButton",
+                        "implHandler": [
+                            " var view = this.getView(),",
+                            "     record = view.getRecord();",
+                            " view.destroy();",
+                            " record.commit();"
+                        ],
+                        "name": "tap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onSaveButton",
+                    "designerId": "58c8d38e-5a1b-4df0-a8cc-089a349fd92a"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"firstName\": \"veniam\",",
+            "        \"lastName\": \"aut\",",
+            "        \"phoneNumber\": \"praesentium\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"deleniti\",",
+            "        \"lastName\": \"dolor\",",
+            "        \"phoneNumber\": \"odit\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"laboriosam\",",
+            "        \"lastName\": \"consequatur\",",
+            "        \"phoneNumber\": \"cupiditate\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"ut\",",
+            "        \"lastName\": \"in\",",
+            "        \"phoneNumber\": \"et\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"nesciunt\",",
+            "        \"lastName\": \"aut\",",
+            "        \"phoneNumber\": \"sapiente\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"maxime\",",
+            "        \"lastName\": \"aut\",",
+            "        \"phoneNumber\": \"odio\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"deleniti\",",
+            "        \"lastName\": \"consequatur\",",
+            "        \"phoneNumber\": \"et\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"veniam\",",
+            "        \"lastName\": \"saepe\",",
+            "        \"phoneNumber\": \"et\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"repellendus\",",
+            "        \"lastName\": \"fugit\",",
+            "        \"phoneNumber\": \"vitae\"",
+            "    },",
+            "    {",
+            "        \"firstName\": \"sit\",",
+            "        \"lastName\": \"id\",",
+            "        \"phoneNumber\": \"numquam\"",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "Employees",
+        "model": "Employee",
+        "storeId": "Employees"
+    },
+    "configAlternates": {
+        "data": "array",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "MyJsonStore",
+    "designerId": "67ba1af3-da84-49de-a164-7070555a2d5a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy",
+            "designerId": "2a06f03b-98da-4b01-813f-39b1ce88ce2d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader",
+                    "designerId": "34e82d60-3ec7-4814-8ca5-e364c358a21d"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "name": "SimpleGridPopup",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.6.0.13",
+            "frameworkVersion": "6.6.0.258"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:49711/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Desktop (Auto Expand)",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "4.2.4",
+    "xdsBuild": 389,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern66",
+    "viewOrderMap": {
+        "view": [
+            "9cfe3247-1599-479a-bab8-c0835e2ee3ea",
+            "3fd1bc08-ac9d-4016-962d-b0a74c48a093",
+            "b580fbf2-055c-4242-8fd3-1d237a340fae",
+            "757541d2-287d-4a97-a5b2-7286b1f0803a",
+            "41276e4e-990e-463d-a3b0-6362768b3f9a",
+            "4abe0701-2242-4000-87ec-2444642303b8"
+        ],
+        "store": [
+            "67ba1af3-da84-49de-a164-7070555a2d5a"
+        ],
+        "controller": [],
+        "model": [
+            "1081395b-e0e4-4dce-b33a-a7b677992e03"
+        ],
+        "resource": [
+            "27d1d808-72ba-4deb-b0b7-f87cbf66a08d",
+            "f02a1c4d-3711-4723-8495-cef78e16b887",
+            "3df95f60-a7c8-43bf-88af-4d5121010f34"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
